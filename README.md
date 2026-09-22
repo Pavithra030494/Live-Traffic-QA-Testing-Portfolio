@@ -29,7 +29,8 @@ The manual testing phase evaluated system resilience across various user actions
 All discovered functional and UI anomalies were documented, prioritized, and mapped into the active Jira backlog under the Project Key `LT`. 
 
 ### 🖼️ Active Board & Backlog Verification
-![Jira Backlog View](./jira-backlog.png)
+![Jira Backlog View](./jira-backlog1.png)
+![Jira Backlog View](./jira-backlog2.png)
 
 ### 📋 Detailed Defect Breakdown
 
