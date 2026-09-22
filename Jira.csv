@@ -1,0 +1,377 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Focus Areas),Custom field (Goals),Custom field (Impact),Custom field (Incident manager),Custom field (Issue colour),Custom field (Locked forms),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Sentiment),Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Vulnerability),Custom field (Vulnerability),Custom field (Work item created forms),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Status Category,Status Category Changed
+[LT-UI-RESP] Sidebar panel fails to collapse into hamburger menu causing overlapping text and routing layout clipping on narrow viewports,LT-15,10058,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,High,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,07/Sep/26 5:09 PM,07/Sep/26 5:10 PM,08/Sep/26 5:03 PM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Viewport Setup:* Mobile / Narrow Desktop Width Simulator
+
+h3. Steps to Reproduce
+
+# Load the Live Traffic NSW application homepage.
+# Narrow the window frame or toggle a mobile device layout viewport configuration.
+# Generate a multi-route trip setup to trigger alternative route map popup windows.
+# Observe the navigation sidebar container and map overlays.
+
+h3. Expected Result
+
+The site adapts seamlessly to smaller screen widths. The left navigation panel collapses automatically into a clean 'hamburger' icon menu button, and map route cards render with proper spacing without overlapping.
+
+h3. Actual Result
+
+The left navigation menu panel fails to collapse automatically and remains fully locked open. This squashes the map canvas, causing multiple route summary cards (e.g., 33 mins / 34 mins options) to stack, overlap, and clip text content parameters directly.
+
+h3. Impact / Severity
+
+* *Severity:* High (Core UI Layout Breakdown / Missing Responsive Breakpoint)
+* *Priority:* High
+* !image-20260907-071004.png|width=557,alt=""image-20260907-071004.png""!
+",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,07/Sep/26 5:10 PM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260907-071004.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10046,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i0005r:,,,,,,,,,,,,,,,,To Do,07/Sep/26 5:09 PM
+"[LT-UI-SHARE] Outdated sharing test script; no ""Share"" or ""Copy Link"" button elements exist in incident detail panels",LT-14,10025,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Low,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,28/Aug/26 10:55 AM,28/Aug/26 10:55 AM,28/Aug/26 10:55 AM,,,0,"h3. Environment
+
+* *URL:* [https://www.livetraffic.com/|https://www.livetraffic.com/|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Open any active incident detail card (e.g., ""CRASH B-triple"" on Kidman Way).
+# Scan the information panel container for a native ""Share"" or ""Copy Link"" button element.
+
+h3. Expected Result
+
+The test case expects a native share action link or button to capture the unique URL layout.
+
+h3. Actual Result
+
+No interactive share button or link asset is present inside the incident details viewport panel. Sharing requires manually extracting the URL from the browser's address bar.
+
+h3. Impact / Severity
+
+* *Severity:* Low (Test Script Refactoring Required)
+* *Priority:* Low
+!image-20260828-005453.png|width=703,alt=""image-20260828-005453.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,28/Aug/26 10:55 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260828-005453.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10013,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i0005j:,,,,,,,,,,,,,,,,To Do,28/Aug/26 10:55 AM
+[LT-UI-AUTH] Outdated authentication test script; no Login/Logout button controls exist on Live Traffic web application,LT-13,10024,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Low,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,27/Aug/26 11:16 AM,27/Aug/26 11:16 AM,27/Aug/26 11:25 AM,,,0,"h3. Environment
+
+* *URL:* [https://www.livetraffic.com/|https://www.livetraffic.com/|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Load the Live Traffic NSW homepage.
+# Attempt to locate a ""Login"", ""Logout"", or user account authentication profile menu interface element.
+
+h3. Expected Result
+
+The test script expects an active user session state with accessible ""Logout"" button controls.
+
+h3. Actual Result
+
+No authentication layer or login/logout UI elements exist on the web platform layout. The app operates strictly as an unauthenticated open public utility portal.
+
+h3. Impact / Severity
+
+* *Severity:* Low (Test Script Refactoring Required)
+* *Priority:* Low
+
+!image-20260827-011613.png|width=727,alt=""image-20260827-011613.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,27/Aug/26 11:16 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260827-011613.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10012,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i0005b:,,,,,,,,,,,,,,,,To Do,27/Aug/26 11:16 AM
+[LT-UI-VAL] Trips panel removes submission buttons and fails to show error messages for unreachable international routes,LT-12,10023,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Medium,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,27/Aug/26 11:07 AM,27/Aug/26 11:07 AM,27/Aug/26 11:07 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Open the 'Trips / Plan Journey' routing panel drawer.
+# Enter a local coordinate (e.g., ""Epping NSW, Australia"") in the Origin text field.
+# Enter an overseas, unmappable destination (e.g., ""London, UK"") in the Destination text field.
+# Attempt to trigger the route calculation process.
+
+h3. Expected Result
+
+The routing engine flags the unmappable transit pathway, preserves the form state, and presents a clear error warning notice reading: ""Unable to calculate a route between these locations.""
+
+h3. Actual Result
+
+No validation notice displays. The interface layout breaks completely, stripping and hiding the routing calculation action button controls from the sidebar drawer view.
+
+h3. Impact / Severity
+
+* *Severity:* Medium (UI Layout Break / Geocoding Error Handling)
+* *Priority:* Medium
+!image-20260827-010729.png|width=703,alt=""image-20260827-010729.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,27/Aug/26 11:07 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260827-010729.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10011,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i00053:,,,,,,,,,,,,,,,,To Do,27/Aug/26 11:07 AM
+[LT-UI-VAL] Trips engine calculates full route and metrics when identical Origin and Destination locations are selected,LT-11,10022,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Medium,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,27/Aug/26 11:03 AM,27/Aug/26 11:03 AM,27/Aug/26 11:03 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Open the 'Trips / Plan Journey' routing panel drawer.
+# Select ""Epping NSW, Australia"" as the Origin.
+# Select the exact same ""Epping NSW, Australia"" location as the Destination.
+# Trigger the route calculation.
+
+h3. Expected Result
+
+The input processing matrix blocks execution and generates an inline validation flag error message reading: ""Origin and Destination cannot be the exact same location.""
+
+h3. Actual Result
+
+The engine processes the loop blindly. No error warning displays; instead, it outputs an impossible travel summary metric (""23.8 km via M2 and M1"") for identical endpoints.
+
+h3. Impact / Severity
+
+* *Severity:* Medium (Business Logic / Validation Defect)
+* *Priority:* Medium
+!image-20260827-010340.png|width=703,alt=""image-20260827-010340.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,27/Aug/26 11:03 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260827-010340.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10010,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i0004v:,,,,,,,,,,,,,,,,To Do,27/Aug/26 11:03 AM
+"[LT-UI-TRIPS] Missing ""Save Route to Favorites"" star icon and favorites folder layout in Trips drawer",LT-10,10021,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Low,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,27/Aug/26 11:00 AM,27/Aug/26 11:00 AM,27/Aug/26 11:00 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Generate an active route from 'Epping NSW' to 'Sydney CBD, NSW'.
+# Attempt to locate a ""star icon"" or ""Save Route to Favorites"" control layout element.
+
+h3. Expected Result
+
+A profile save control or star icon is visible to cache the journey profile into local storage files.
+
+h3. Actual Result
+
+No favorite selection controls or star icons exist inside the sidebar panel structure or map viewport canvas.
+
+h3. Impact / Severity
+
+* *Severity:* Low (Feature Discrepancy / Outdated Script Criteria)
+* *Priority:* Low
+!image-20260827-010000.png|width=703,alt=""image-20260827-010000.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,27/Aug/26 11:00 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260827-010000.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10009,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i0004n:,,,,,,,,,,,,,,,,To Do,27/Aug/26 11:00 AM
+[LT-UI-VAL] Trips routing panel collapses and removes submission buttons when processing long overflow strings (>500 characters),LT-9,10020,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Medium,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 11:45 AM,26/Aug/26 11:45 AM,26/Aug/26 9:02 PM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Open the 'Trips / Plan Journey' routing panel drawer.
+# Paste an extremely long text string (over 500+ repeating characters) into both the Origin and Destination text containers.
+# Remove focus from the inputs and check the action button container layout area.
+
+h3. Expected Result
+
+The input box safely truncates the string at a predefined character limit, stops accepting new keystrokes, and keeps the route calculation buttons functional.
+
+h3. Actual Result
+
+No string limit or boundary validation is enforced. The application layout drops its structural state, completely hiding all routing submission and calculation buttons from the panel view.
+
+h3. Impact / Severity
+
+* *Severity:* Medium (Input Buffer Failure / UI Component Break)
+* *Priority:* Medium
+!image-20260826-014517.png|width=703,alt=""image-20260826-014517.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 11:45 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-014517.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10008,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i0004f:,,,,,,,,,,,,,,,,To Do,26/Aug/26 11:45 AM
+[LT-UI-VAL] Trips panel completely hides routing submission buttons when a mandatory field is left empty,LT-8,10019,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Medium,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 11:33 AM,26/Aug/26 11:33 AM,26/Aug/26 11:33 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+* *Browser:* Google Chrome (Latest Version)
+
+h3. Prerequisites
+
+* User is on the 'Trips / Plan Journey' routing panel drawer menu.
+
+h3. Steps to Reproduce
+
+# Open the 'Trips' navigation tab on the left sidebar menu layout.
+# Leave the primary 'Origin' departure field completely empty.
+# Type a valid address (e.g., ""Wollongong NSW, Australia"") into the 'Destination' field box.
+# Remove your cursor focus from the text inputs and observe the form action area.
+
+h3. Expected Result
+
+The application blocks the search execution process and displays a clear red mandatory field inline validation error text indicator next to the empty origin box to guide the user.
+
+h3. Actual Result
+
+No error indications are rendered. The application layout drops its structural state, completely stripping and hiding the ""Get Directions"" / ""Calculate Route"" routing calculation action buttons from the panel layout view.
+
+h3. Impact / Severity
+
+* *Severity:* Medium (Form Control / UI Validation Failure)
+* *Priority:* Medium
+!image-20260826-013313.png|width=703,alt=""image-20260826-013313.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 11:33 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-013313.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10007,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i00047:,,,,,,,,,,,,,,,,To Do,26/Aug/26 11:33 AM
+[LT-UI-VAL] Trips panel completely hides routing submission buttons when a mandatory field is left empty,LT-7,10018,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Medium,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 11:26 AM,26/Aug/26 11:26 AM,26/Aug/26 11:26 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Open the 'Trips / Plan Journey' routing panel drawer.
+# Leave the Origin field completely blank.
+# Type a valid address (e.g., ""Wollongong NSW, Australia"") into the Destination field.
+# Remove focus from the inputs and check for submission buttons.
+
+h3. Expected Result
+
+The system blocks the route calculation process, flags the empty box layout, and displays a clear red mandatory field inline validation error text indicator.
+
+h3. Actual Result
+
+No error indications are rendered. The application layout drops its structural state, completely hiding all route calculation action buttons from the panel view.
+
+h3. Impact / Severity
+
+* *Severity:* Medium (Form Control / UI Validation Failure)
+* *Priority:* Medium
+!image-20260826-012628.png|width=703,alt=""image-20260826-012628.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 11:26 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-012628.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10006,,,ApprovalsCFValue{approvals=[]},,,,,ghx-label-5,,,,,,,dark_teal,,,,,0|i0003z:,,,,,,,,,,,,,,,,To Do,26/Aug/26 11:26 AM
+[LT-UI-VAL] Trips routing fields hide all action buttons when invalid special characters (_#@!*$) are input,LT-6,10017,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Medium,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 11:17 AM,26/Aug/26 11:17 AM,26/Aug/26 11:17 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+
+h3. Steps to Reproduce
+
+# Open the 'Trips / Plan Journey' routing panel drawer.
+# Type a string of special characters: {{_#@!*$}} into the Origin and Destination fields.
+# Remove focus from the input text containers.
+
+h3. Expected Result
+
+The input field blocks submission and loads an empty-state fallback warning text reading: ""No results found. Please check your spelling or try another location.""
+
+h3. Actual Result
+
+The layout collapses entirely. No inline errors are loaded, and the ""Get Directions"" / ""Calculate Route"" button containers are completely hidden from view.
+
+h3. Impact / Severity
+
+* *Severity:* Medium (UI Layout Break / Input Handling)
+* *Priority:* Medium
+!image-20260826-011720.png|width=703,alt=""image-20260826-011720.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 11:17 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-011720.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10005,,,ApprovalsCFValue{approvals=[]},,,,,ghx-label-3,,,,,,,yellow,,,,,0|i0003r:,,,,,,,,,,,,,,,,To Do,26/Aug/26 11:17 AM
+[LT-SEC] Trips routing panel completely breaks and hides submission UI when SQL injection payload (' OR 1=1--) is injected,LT-5,10016,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Highest,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 10:54 AM,26/Aug/26 10:55 AM,26/Aug/26 10:55 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+* *Browser:* Google Chrome (Latest Version)
+
+h3. Prerequisites
+
+* User is on the Trips routing drawer interface.
+
+h3. Steps to Reproduce
+
+# Open the 'Trips / Plan Journey' routing panel drawer.
+# Click inside the 'Origin' text field and paste the SQL payload: ' OR 1=1--
+# Click inside the 'Destination' text field and paste the identical payload: ' OR 1=1--
+# Blur focus from the input fields and check for routing submission elements.
+
+h3. Expected Result
+
+The application securely handles the string payload. It displays an inline validation error message (e.g., ""Invalid location selected"") and retains functional submission controls.
+
+h3. Actual Result
+
+The application layout breaks down entirely. No validation warnings are rendered, and all submission buttons (""Get Directions"" / ""Calculate Route"") are completely stripped from the UI layout.
+
+h3. Impact / Severity
+
+* *Severity:* High / Critical (Security Vulnerability / SQLi Leak Risk)
+* *Priority:* Highest
+!image-20260826-005418.png|width=703,alt=""image-20260826-005418.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 10:54 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-005418.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10004,,,ApprovalsCFValue{approvals=[]},,,,,ghx-label-14,,,,,,,dark_orange,,,,,0|i0003j:,,,,,,,,,,,,,,,,To Do,26/Aug/26 10:54 AM
+"[LT-UI-CAM] Missing ""Live Video / Stream"" tab control button in traffic camera sidebar",LT-4,10015,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Low,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 10:50 AM,26/Aug/26 10:55 AM,26/Aug/26 10:55 AM,,,0,"h3. Steps to Reproduce
+
+# Toggle ""Live Traffic Cameras"" active.
+# Click the Carlingford Road blue camera icon marker.
+# Attempt to locate the ""Live Video / Stream"" tab control button.
+
+h3. Expected Result
+
+""Live Video / Stream"" tab control button is visible to transition to a running live video stream.
+
+h3. Actual Result
+
+No tab control exists. The UI states ""New images are uploaded every 15 seconds,"" indicating only static snapshots are supported.
+
+!image-20260826-004938.png|width=727,alt=""image-20260826-004938.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 10:50 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-004938.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10003,,,ApprovalsCFValue{approvals=[]},,,,,ghx-label-14,,,,,,,dark_orange,,,,,0|i0003b:,,,,,,,,,,,,,,,,To Do,26/Aug/26 10:50 AM
+[LT-UI-CAM] Great Western Highway (Victoria Pass) live webcam feed returns operational unavailable message,LT-3,10014,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,High,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 10:33 AM,26/Aug/26 10:38 AM,26/Aug/26 10:42 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+* *Browser:* Google Chrome (Latest Version)
+
+h3. Prerequisites
+
+* Live Traffic Cameras layer toggled to ON.
+
+h3. Steps to Reproduce
+
+# Navigate to the Live Traffic NSW website map interface.
+# Toggle the ""Live Traffic Cameras"" option to ON.
+# Locate and click on the blue camera marker pin element at Great Western Highway (Victoria Pass).
+# Observe the media layout inside the expanded left sidebar panel drawer.
+
+h3. Expected Result
+
+The camera component handles the media stream fluidly and displays the real-time road view imagery (refreshed every 15 seconds).
+
+h3. Actual Result
+
+The webcam viewport displays an orange error message banner: ""This [http://livetraffic.com|http://livetraffic.com|smart-link]  webcam is currently unavailable for operational reasons. Please check back later.""
+
+h3. Impact / Severity
+
+* *Severity:* Medium (Functional Regression / Stream Failure)
+* *Priority:* High (Public safety feature unavailable on closed route)
+
+!image-20260826-003332.png|width=727,alt=""image-20260826-003332.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 10:33 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-003332.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10002,,,ApprovalsCFValue{approvals=[]},,,,,ghx-label-6,,,,,,,green,,,,,0|i00033:,,,,,,,,,,,,,,,,To Do,26/Aug/26 10:33 AM
+[LT-UI-MAP] Live Traffic map renders yellow roadwork pin instead of red incident icon during major closures,LT-2,10013,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,High,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,26/Aug/26 10:15 AM,26/Aug/26 10:41 AM,26/Aug/26 10:40 AM,,,0,"h3. Environment
+
+* *URL:* [https://livetraffic.com|https://livetraffic.com|smart-link] 
+* *Device / OS:* Desktop (Windows 11 / macOS)
+* *Browser:* Google Chrome (Latest Version)
+
+h3. Prerequisites
+
+* Live traffic data layer must contain an active incident at Victoria Pass (Great Western Highway).
+
+h3. Steps to Reproduce
+
+# Navigate to the Live Traffic NSW website.
+# Locate the active road hazard segment at Mount Victoria / Victoria Pass.
+# Observe the layout icon element for the active incident pin.
+# Click on the pin layout to display the slide-out panel drawer UI context.
+
+h3. Expected Result
+
+The system should render a standard Red Incident Marker Pin Icon. Clicking the pin should display a dynamic side drawer displaying volatile regional traffic alerts.
+
+h3. Actual Result
+
+The map layer renders a Yellow Emergency Roadwork Warning Triangle Pin. The side panel displays long-term infrastructure structural failure context (""Highway closed in both directions"") instead of standard volatile incident handling metrics.
+
+h3. Impact / Severity
+
+* *Severity:* Medium (UI Mismatch / Element Mapping Issue)
+* *Priority:* Medium
+!image-20260826-001947.png|width=557,alt=""image-20260826-001947.png""!",,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,26/Aug/26 10:20 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260826-001947.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10001,,,ApprovalsCFValue{approvals=[]},,,,,ghx-label-8,,,,,,,dark_purple,,,,,0|i0002v:,,,,,,,,,,,,,,,,To Do,26/Aug/26 10:15 AM
+Trips input fields accept invalid special characters and fail to display input validation errors,LT-1,10012,Bug,To Do,LT,Live traffic,software,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,Medium,,,,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,25/Aug/26 10:56 AM,25/Aug/26 11:48 AM,26/Aug/26 11:22 AM,,,0,"_Bug Summary:_
+The location input fields under the ""Trips"" panel accept completely invalid strings containing only punctuation and special characters without triggering any user input validation errors or clearing out the entry fields.
+
+_Steps to Reproduce:_
+
+# Open a desktop web browser and navigate to the Live Traffic NSW site ([http://livetraffic.com|http://livetraffic.com|smart-link] ).
+# Click the ""Trips"" navigation tab on the left-hand panel menu.
+# In the first location text entry field, type the special character string: / , . . . .
+# In the second destination text entry field, type the special character string: , / /
+# Observe how the application handles the input.
+
+_Expected Result:_
+The application should validate the address input strings. It should show a clear validation error message (e.g., ""Please enter a valid address or location"") and block the user from trying to search with raw special characters.
+
+_Actual Result:_
+The application accepts the strings completely, leaving the raw characters permanently visible inside the fields with no validation alerts displayed to help the user.
+
+!image-20260825-014746.png|width=591,alt=""image-20260825-014746.png""!","URL: [https://livetraffic.com|https://livetraffic.com|smart-link] 
+OS: Windows 11 (64-bit)
+Browser: Google Chrome (Latest Version)
+Device: Desktop PC Layout",pavithra ramesh,712020:bd3acc6e-796f-4b90-8c04-2eacbcb13884,,,,,,,,,25/Aug/26 11:48 AM;27a75f28-6f9a-4d8a-ac5a-f9b5e22f54a9;image-20260825-014746.png;https://adactin-team-jlf2po32.atlassian.net/rest/api/3/attachment/content/10000,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,0|i0002n:,,,,,,,,,,,,,,,,To Do,25/Aug/26 10:56 AM
