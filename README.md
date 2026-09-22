@@ -18,9 +18,9 @@ The goal of this project was to perform comprehensive manual and functional UI t
 The manual testing phase evaluated system resilience across various user actions and edge cases. Detailed metrics, execution charts, and pass/fail balances are archived directly within this repository:
 
 The manual testing phase evaluated system resilience across various user actions and edge cases. Detailed metrics, execution charts, and pass/fail balances are archived directly within this repository:
-
 * 📄 **Master Report Document:** [Live Traffic master report.pdf](./Live%20Traffic%20master%20report.pdf)
 * 📊 **Raw Defect Database:** [Jira Defect Log](./jira.csv)
+* 💾 **TestRail XML Suite Backup:** [livetraffic_application_web_app.xml](./livetraffic_application_web_app.xml)
 
 
 ---
