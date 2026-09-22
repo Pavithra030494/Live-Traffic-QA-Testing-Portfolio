@@ -17,8 +17,11 @@ The goal of this project was to perform comprehensive manual and functional UI t
 ## 📈 Test Execution Analysis & Artifacts
 The manual testing phase evaluated system resilience across various user actions and edge cases. Detailed metrics, execution charts, and pass/fail balances are archived directly within this repository:
 
-* 📄 **Master Report Document:** [Live Traffic master report_0014.pdf](./Live Traffic master report_0014.pdf)
-* 📊 **Raw Defect Database:** [Jira_Defect_Log_Live_Traffic.csv](./Jira_Defect_Log_Live_Traffic.csv)
+The manual testing phase evaluated system resilience across various user actions and edge cases. Detailed metrics, execution charts, and pass/fail balances are archived directly within this repository:
+
+* 📄 **Master Report Document:** [Live Traffic master report.pdf](./Live%20Traffic%20master%20report.pdf)
+* 📊 **Raw Defect Database:** [Jira Defect Log](./jira.csv)
+
 
 ---
 
